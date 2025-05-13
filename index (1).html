@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع إسلامي - صف ثاني متوسط</title>
+    <style>
+        body {
+            font-family: 'Traditional Arabic', 'Arial', sans-serif;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/api/placeholder/800/600');
+            background-color: #f5f0e6;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        header, footer {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 8px;
+            background-color: #e8f3eb;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header::before, footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(232, 243, 235, 0.8);
+            border-radius: 8px;
+            z-index: 0;
+        }
+
+        header h1, header p, header .student-info,
+        footer p, footer .student-info {
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            background-image: url('/api/placeholder/800/200');
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-image: url('/api/placeholder/800/100');
+            margin-top: 30px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #2c8a56;
+            border-radius: 8px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3em;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1a6b42;
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        section h2 {
+            color: #2c8a56;
+            border-bottom: 2px solid #e8f3eb;
+            padding-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .topic {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-right: 4px solid #2c8a56;
+            background-color: #f9f9f9;
+        }
+
+        .topic h3 {
+            color: #1a6b42;
+            margin-top: 0;
+        }
+
+        .topic p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .islamic-decoration {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .islamic-decoration span {
+            font-size: 2em;
+            color: #2c8a56;
+            margin: 0 15px;
+        }
+
+        .islamic-image {
+            text-align: center;
+            margin: 15px 0;
+            border: 5px solid #e8f3eb;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .islamic-image img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .student-info {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #1a6b42;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>موقع العلوم الإسلامية</h1>
+            <p>للصف الثاني المتوسط</p>
+            <div class="student-info">
+                <p>عمل الطالب: ماجد الحسن</p>
+                <p>إشراف: الأستاذ يوسف النوار</p>
+            </div>
+            <div class="islamic-decoration">
+                <span>۞</span><span>۩</span><span>۞</span>
+            </div>
+        </header>
+
+        <nav>
+            <a href="#tawheed">التوحيد</a>
+            <a href="#hadith">الحديث</a>
+            <a href="#fiqh">الفقه</a>
+        </nav>
+
+        <section id="tawheed">
+            <h2>قسم التوحيد</h2>
+            <div class="topic">
+                <h3>من سأل بالله</h3>
+                <p>الإجابة على من سأل بالله...</p>
+            </div>
+        </section>
+
+        <div class="islamic-decoration"><span>۞</span><span>۩</span><span>۞</span></div>
+
+        <section id="hadith">
+            <h2>قسم الحديث</h2>
+            <div class="topic">
+                <h3>الغيبة</h3>
+                <p>الغيبة هي ذكرك أخاك بما يكره...</p>
+            </div>
+        </section>
+
+        <div class="islamic-decoration"><span>۞</span><span>۩</span><span>۞</span></div>
+
+        <section id="fiqh">
+            <h2>قسم الفقه</h2>
+            <div class="topic">
+                <h3>محظورات الإحرام</h3>
+                <p>محظورات الإحرام هي الأمور التي يجب على المحرم تجنبها...</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="student-info">
+                <p>عمل الطالب: ماجد الحسن</p>
+                <p>إشراف: الأستاذ يوسف النوار</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
